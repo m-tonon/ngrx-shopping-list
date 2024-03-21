@@ -32,5 +32,10 @@ export const shoppingListReducer = createReducer(
   on(actions.loadShoppingListError, (state) => ({
     ...state,
     isLoading: false,
+  })),
+  on(actions.addIngredient, (state, { entities }) => ({
+    ...state,
+    entities: [...state.entities, entities],
+    isLoading: false,
   }))
 );

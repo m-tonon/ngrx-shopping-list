@@ -11,3 +11,7 @@ export const loadShoppingListSuccess = createAction(
 export const loadShoppingListError = createAction(
   '[Shopping List] Load Shopping List Error'
 );
+export const addIngredient = createAction(
+  '[Shopping List] Add Ingredient',
+  props<{ entities: IShoppingListItem }>()
+)

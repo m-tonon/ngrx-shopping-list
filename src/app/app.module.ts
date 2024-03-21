@@ -11,12 +11,14 @@ import { AddIngredientComponent } from './add-ingredient/add-ingredient.componen
 import { StoreModule } from '@ngrx/store';
 import { shoppingListReducer } from './store/shopping-list.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, ShoppingListComponent, AddIngredientComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     StoreModule.forRoot({
       shoppingList: shoppingListReducer,
     }),
