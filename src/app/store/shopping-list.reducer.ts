@@ -3,11 +3,18 @@ import { IShoppingListState } from './shopping-list.state';
 import * as actions from './shopping-list.actions';
 
 export const initialState: IShoppingListState = {
-  entities: [{
-    id: '1',
-    name: 'Milk',
-    quantity: 2,
-  }],
+  entities: [
+    {
+      id: '1',
+      name: 'Milk',
+      quantity: 2,
+    },
+    {
+      id: '2',
+      name: 'Bread',
+      quantity: 3,
+    },
+  ],
   isLoading: false,
 };
 
